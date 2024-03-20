@@ -24,13 +24,12 @@
                         type="email"
                         class="form-control @error('email') is-invalid @enderror"
                         value="{{ old('email')}}"
-                        name="email"
-                        tabindex="1">
-
+                        name="email" tabindex="1">
                     @error('email')
                     <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
+                    {{-- Please fill in your email --}}
+                    {{ $message }}
+                    </div>   
                     @enderror
 
                 </div>
@@ -46,7 +45,7 @@
                         name="password"
                         tabindex="2">
                     <div class="invalid-feedback">
-                        please fill in your password
+                        {{$message}}
                     </div>
                 </div>
 

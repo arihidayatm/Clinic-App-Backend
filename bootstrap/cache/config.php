@@ -199,8 +199,8 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'F:\\laragon\\www\\clinic-backend\\storage\\framework/cache/data',
-        'lock_path' => 'F:\\laragon\\www\\clinic-backend\\storage\\framework/cache/data',
+        'path' => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\storage\\framework/cache/data',
+        'lock_path' => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -373,13 +373,13 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'F:\\laragon\\www\\clinic-backend\\storage\\app',
+        'root' => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\storage\\app',
         'throw' => false,
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'F:\\laragon\\www\\clinic-backend\\storage\\app/public',
+        'root' => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
         'throw' => false,
@@ -399,7 +399,7 @@
     ),
     'links' => 
     array (
-      'F:\\laragon\\www\\clinic-backend\\public\\storage' => 'F:\\laragon\\www\\clinic-backend\\storage\\app/public',
+      'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\public\\storage' => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\storage\\app/public',
     ),
   ),
   'fortify-options' => 
@@ -526,14 +526,14 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'F:\\laragon\\www\\clinic-backend\\storage\\logs/laravel.log',
+        'path' => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\storage\\logs/laravel.log',
         'level' => 'debug',
         'replace_placeholders' => true,
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'F:\\laragon\\www\\clinic-backend\\storage\\logs/laravel.log',
+        'path' => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
         'replace_placeholders' => true,
@@ -598,7 +598,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'F:\\laragon\\www\\clinic-backend\\storage\\logs/laravel.log',
+        'path' => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -674,7 +674,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'F:\\laragon\\www\\clinic-backend\\resources\\views/vendor/mail',
+        0 => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -787,7 +787,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'F:\\laragon\\www\\clinic-backend\\storage\\framework/sessions',
+    'files' => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -808,9 +808,9 @@
   array (
     'paths' => 
     array (
-      0 => 'F:\\laragon\\www\\clinic-backend\\resources\\views',
+      0 => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\resources\\views',
     ),
-    'compiled' => 'F:\\laragon\\www\\clinic-backend\\storage\\framework\\views',
+    'compiled' => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend\\storage\\framework\\views',
   ),
   'flare' => 
   array (
@@ -892,7 +892,7 @@
     array (
     ),
     'enable_runnable_solutions' => NULL,
-    'remote_sites_path' => 'F:\\laragon\\www\\clinic-backend',
+    'remote_sites_path' => 'F:\\laragon\\www\\clinic-app-back\\Clinic-App-Backend',
     'local_sites_path' => '',
     'housekeeping_endpoint_prefix' => '_ignition',
     'settings_file_path' => '',
