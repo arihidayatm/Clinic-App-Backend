@@ -26,12 +26,11 @@
                         value="{{ old('email')}}"
                         name="email" tabindex="1">
                     @error('email')
-                    <div class="invalid-feedback">
-                    {{-- Please fill in your email --}}
-                    {{ $message }}
-                    </div>   
+                        <div class="invalid-feedback">
+                        {{-- Please fill in your email --}}
+                        {{ $message }}
+                        </div>   
                     @enderror
-
                 </div>
 
                 <div class="form-group">
@@ -41,12 +40,16 @@
                     </div>
                     <input id="password"
                         type="password"
-                        class="form-control"
+                        class="form-control" @error('password')
+                            is-invalid
+                    @enderror
                         name="password"
                         tabindex="2">
-                    <div class="invalid-feedback">
-                        {{$message}}
-                    </div>
+                    @error('password')
+                        <div class="invalid-feedback">
+                            {{$message}}
+                        </div>
+                    @enderror
                 </div>
 
                 <div class="form-group">
