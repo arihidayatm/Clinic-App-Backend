@@ -78,7 +78,9 @@ class UserController extends Controller
         $user->email = $request->email;
         $user->phone = $request->phone;
         $user->role = $request->role;
-        $user->password = Hash::make($request->name);
+        if($request->password){
+            $user->password = Hash::make($request->password);
+        }
         $user->save();
 
         return redirect()->route('users.index')->with('succes', 'User updated successfully');
