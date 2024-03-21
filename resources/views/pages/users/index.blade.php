@@ -11,7 +11,7 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Users</h1>
+                <h1>Users Management</h1>
                 <div class="section-header-button">
                     <a href="{{ route('users.create') }}" class="btn btn-primary">Add New</a>
                 </div>
@@ -27,7 +27,7 @@
                         @include('layouts.alert')
                     </div>
                 </div> --}}
-                <h2 class="section-title">Users</h2>
+                <h2 class="section-title">Users Management</h2>
                 <p class="section-lead">
                     You can manage all Users, such as editing, deleting and more.
                 </p>
@@ -40,14 +40,6 @@
                                 <h4>All Posts</h4>
                             </div>
                             <div class="card-body">
-                                <div class="float-left">
-                                    <select class="form-control selectric">
-                                        <option>Action For Selected</option>
-                                        <option>Move to Draft</option>
-                                        <option>Move to Pending</option>
-                                        <option>Delete Pemanently</option>
-                                    </select>
-                                </div>
                                 <div class="float-right">
                                     <form method="GET" action="{{ route('users.index') }}">
                                         <div class="input-group">
@@ -68,6 +60,7 @@
                                             <th>Name</th>
                                             <th>Email</th>
                                             <th>Phone</th>
+                                            <th>Role</th>
                                             <th>Created At</th>
                                             <th>Action</th>
                                         </tr>
@@ -81,6 +74,9 @@
                                                 </td>
                                                 <td>
                                                     {{ $user->phone }}
+                                                </td>
+                                                <td>
+                                                    {{ $user->role }}
                                                 </td>
                                                 <td>{{ $user->created_at }}</td>
                                                 <td>
