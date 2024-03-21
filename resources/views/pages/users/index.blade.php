@@ -22,11 +22,11 @@
                 </div>
             </div>
             <div class="section-body">
-                {{-- <div class="row">
+                <div class="row">
                     <div class="col-12">
                         @include('layouts.alert')
                     </div>
-                </div> --}}
+                </div>
                 <h2 class="section-title">Users Management</h2>
                 <p class="section-lead">
                     You can manage all Users, such as editing, deleting and more.
