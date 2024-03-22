@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        
+
         //manual tambah data user
         \App\Models\User::factory()->create([
             'name' => 'Admin User',
@@ -38,6 +38,11 @@ class DatabaseSeeder extends Seeder
             'email' => 'muhamadarihidayat@gmail.com',
             'doctor_name' => 'Muhamad Ari Hidayat',
             'clinic_code' => ('280789'),
+        ]);
+
+        //call
+        $this->call([
+            DoctorSeeder::class,
         ]);
     }
 }
