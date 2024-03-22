@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('profile_clinics', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('address');
+            $table->string('phone');
+            $table->string('email');
+            $table->string('logo')->nullable();
+            //doctor name
+            $table->string('doctor_name');
+            //kode clinic
+            $table->string('clinic_code');
             $table->timestamps();
         });
     }
