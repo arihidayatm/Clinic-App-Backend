@@ -41,7 +41,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::gPLo8Lo1RIGNE2OP',
+            '_route' => 'generated::iipJBEW6mYkWeylc',
           ),
           1 => NULL,
           2 => 
@@ -151,7 +151,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::pFZ0rTxlob0WgM20',
+            '_route' => 'generated::eC5vgu955XBzLnET',
           ),
           1 => NULL,
           2 => 
@@ -208,7 +208,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::LruSjcYHrsocc1nl',
+            '_route' => 'generated::LezopG1Tux0wQlxi',
           ),
           1 => NULL,
           2 => 
@@ -281,7 +281,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::eFd3EHEr7ZdFzZPx',
+            '_route' => 'generated::F2qmJJF3QpazIYAG',
           ),
           1 => NULL,
           2 => 
@@ -411,7 +411,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::mnuPfE0htRZHlAuC',
+            '_route' => 'generated::JY8rp9qsdXYO5LL4',
           ),
           1 => NULL,
           2 => 
@@ -508,7 +508,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::3Pp3ktu9eknDX7ub',
+            '_route' => 'generated::cqzR8XJbiSFQYLJy',
           ),
           1 => NULL,
           2 => 
@@ -528,7 +528,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ZbhiIaeZafST6ThH',
+            '_route' => 'generated::j0FIWFlc5trNDyL7',
           ),
           1 => NULL,
           2 => 
@@ -618,10 +618,66 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/doctors' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctors.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctors.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/doctors/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctors.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/reset\\-password/([^/]++)(*:32)|/users/([^/]++)(?|(*:57)|/edit(*:69)|(*:76)))/?$}sDu',
+      0 => '{^(?|/reset\\-password/([^/]++)(*:32)|/users/([^/]++)(?|(*:57)|/edit(*:69)|(*:76))|/doctors/([^/]++)(?|(*:104)|/edit(*:117)|(*:125)))/?$}sDu',
     ),
     3 => 
     array (
@@ -735,6 +791,94 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
+      ),
+      104 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctors.show',
+          ),
+          1 => 
+          array (
+            0 => 'doctor',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      117 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctors.edit',
+          ),
+          1 => 
+          array (
+            0 => 'doctor',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      125 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctors.update',
+          ),
+          1 => 
+          array (
+            0 => 'doctor',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctors.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'doctor',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
         2 => 
         array (
           0 => NULL,
@@ -790,7 +934,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::gPLo8Lo1RIGNE2OP' => 
+    'generated::iipJBEW6mYkWeylc' => 
     array (
       'methods' => 
       array (
@@ -813,7 +957,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::gPLo8Lo1RIGNE2OP',
+        'as' => 'generated::iipJBEW6mYkWeylc',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1059,7 +1203,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::pFZ0rTxlob0WgM20' => 
+    'generated::eC5vgu955XBzLnET' => 
     array (
       'methods' => 
       array (
@@ -1081,7 +1225,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::pFZ0rTxlob0WgM20',
+        'as' => 'generated::eC5vgu955XBzLnET',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1173,7 +1317,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::LruSjcYHrsocc1nl' => 
+    'generated::LezopG1Tux0wQlxi' => 
     array (
       'methods' => 
       array (
@@ -1196,7 +1340,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::LruSjcYHrsocc1nl',
+        'as' => 'generated::LezopG1Tux0wQlxi',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1328,7 +1472,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::eFd3EHEr7ZdFzZPx' => 
+    'generated::F2qmJJF3QpazIYAG' => 
     array (
       'methods' => 
       array (
@@ -1351,7 +1495,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::eFd3EHEr7ZdFzZPx',
+        'as' => 'generated::F2qmJJF3QpazIYAG',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1604,7 +1748,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::mnuPfE0htRZHlAuC' => 
+    'generated::JY8rp9qsdXYO5LL4' => 
     array (
       'methods' => 
       array (
@@ -1627,7 +1771,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::mnuPfE0htRZHlAuC',
+        'as' => 'generated::JY8rp9qsdXYO5LL4',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1789,7 +1933,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::3Pp3ktu9eknDX7ub' => 
+    'generated::cqzR8XJbiSFQYLJy' => 
     array (
       'methods' => 
       array (
@@ -1812,7 +1956,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::3Pp3ktu9eknDX7ub',
+        'as' => 'generated::cqzR8XJbiSFQYLJy',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1828,7 +1972,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ZbhiIaeZafST6ThH' => 
+    'generated::j0FIWFlc5trNDyL7' => 
     array (
       'methods' => 
       array (
@@ -1850,7 +1994,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::ZbhiIaeZafST6ThH',
+        'as' => 'generated::j0FIWFlc5trNDyL7',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2149,6 +2293,270 @@ app('router')->setCompiledRoutes(
         'as' => 'users.destroy',
         'uses' => 'App\\Http\\Controllers\\UserController@destroy',
         'controller' => 'App\\Http\\Controllers\\UserController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctors.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'doctors',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctors.index',
+        'uses' => 'App\\Http\\Controllers\\DoctorController@index',
+        'controller' => 'App\\Http\\Controllers\\DoctorController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctors.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'doctors/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctors.create',
+        'uses' => 'App\\Http\\Controllers\\DoctorController@create',
+        'controller' => 'App\\Http\\Controllers\\DoctorController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctors.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'doctors',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctors.store',
+        'uses' => 'App\\Http\\Controllers\\DoctorController@store',
+        'controller' => 'App\\Http\\Controllers\\DoctorController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctors.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'doctors/{doctor}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctors.show',
+        'uses' => 'App\\Http\\Controllers\\DoctorController@show',
+        'controller' => 'App\\Http\\Controllers\\DoctorController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctors.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'doctors/{doctor}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctors.edit',
+        'uses' => 'App\\Http\\Controllers\\DoctorController@edit',
+        'controller' => 'App\\Http\\Controllers\\DoctorController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctors.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'doctors/{doctor}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctors.update',
+        'uses' => 'App\\Http\\Controllers\\DoctorController@update',
+        'controller' => 'App\\Http\\Controllers\\DoctorController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctors.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'doctors/{doctor}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctors.destroy',
+        'uses' => 'App\\Http\\Controllers\\DoctorController@destroy',
+        'controller' => 'App\\Http\\Controllers\\DoctorController@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 

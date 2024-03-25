@@ -23,7 +23,7 @@
             </li>
             <li class=''>
                 <a class="nav-link"
-                    href="#"><i class="fas fa-id-badge">
+                    href="{{ route('doctors.index') }}"><i class="fas fa-id-badge">
                     </i> <span>Doctors</span>
                 </a>
             </li>

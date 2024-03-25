@@ -23,7 +23,8 @@
                             <li class="breadcrumb-item"><a href="#"><i class="fas fa-id-badge"></i>
                                     Doctors</a></li>
                             <li class="breadcrumb-item"
-                                aria-current="page"><i class="fas fa-users"></i> All Doctor</li>
+                                aria-current="page"><i class="fas fa-users"></i>
+                                    All Doctor</li>
                         </ol>
                     </nav>
                </div>
@@ -77,7 +78,6 @@
                                         </tr>
                                         @foreach ($doctors as $doctor)
                                             <tr>
-
                                                 <td>{{ $doctor->doctor_name }}
                                                 </td>
                                                 <td>
@@ -113,8 +113,7 @@
                                                         <form action="{{ route('doctors.destroy', $doctor->id) }}" method="POST"
                                                             class="ml-2">
                                                             <input type="hidden" name="_method" value="DELETE" />
-                                                            <input type="hidden" name="_token"
-                                                                value="{{ csrf_token() }}" />
+                                                            <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                                                             <button class="btn btn-sm btn-danger btn-icon confirm-delete">
                                                                 <i class="fas fa-times"></i> Delete
                                                             </button>
