@@ -17,11 +17,18 @@
         <section class="section">
             <div class="section-header">
                 <h1>Advanced Forms</h1>
-                <div class="section-header-breadcrumb">
-                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                    <div class="breadcrumb-item"><a href="#">Forms</a></div>
-                    <div class="breadcrumb-item">Users</div>
-                </div>
+                <div class="section-header-breadcrumb d-flex justify-content-end">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active"><a href="#"><i class="fas fa-tachometer-alt"></i>
+                                    Home</a></li>
+                            <li class="breadcrumb-item"><a href="#"><i class="fas fa-id-badge"></i>
+                                    Users</a></li>
+                            <li class="breadcrumb-item"
+                                aria-current="page"><i class="fas fa-users"></i> All Users</li>
+                        </ol>
+                    </nav>
+               </div>
             </div>
 
             <div class="section-body">

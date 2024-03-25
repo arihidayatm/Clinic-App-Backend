@@ -10,38 +10,36 @@
             <li class="menu-header">Dashboard</li>
             <li class='{{ Request::is('dashboard-general-dashboard') ? 'active' : '' }}'>
                 <a class="nav-link"
-                    href="{{ url('dashboard') }}"><i class="fas fa-home"></i> General Dashboard</a>
+                    href="{{ url('dashboard') }}"><i class="fas fa-tachometer-alt"></i> General Dashboard</a>
             </li>
             <li class="menu-header">Master Data</li>
             <li class="{{ Request::is('credits') ? 'active' : '' }}">
                 <a class="nav-link"
-                    href="{{ url('credits') }}"><i class="fas fa-home">
-                    </i> <span>Organisasi</span></a>
+                    href="{{ url('credits') }}"><i class="fas fa-hospital"></i> <span>Profile</span></a>
             </li>
             <li class=''>
                 <a class="nav-link"
-                    href="{{ route('users.index') }}"><i class="fas fa-users">
-                    </i> <span>Users</span></a>
+                    href="{{ route('users.index') }}"><i class="fas fa-user"></i> <span>Users</span></a>
             </li>
-            <li class="{{ Request::is('credits') ? 'active' : '' }}">
+            <li class=''>
                 <a class="nav-link"
-                    href="{{ url('credits') }}"><i class="fas fa-users">
-                    </i> <span>Pegawai</span>
+                    href="#"><i class="fas fa-id-badge">
+                    </i> <span>Doctors</span>
                 </a>
             </li>
-            <li class="{{ Request::is('credits') ? 'active' : '' }}">
+            {{-- <li class="{{ Request::is('credits') ? 'active' : '' }}">
                 <a class="nav-link"
                     href="{{ url('credits') }}"><i class="fas fa-pencil-ruler">
                     </i> <span>Ruangan</span>
                 </a>
             </li>
-            <li class="{{ Request::is('credits') ? 'active' : '' }}">
+            <li class=''>
                 <a class="nav-link"
                     href="{{ url('credits') }}"><i class="fas fa-pencil-ruler">
                     </i> <span>Tindakan</span>
                 </a>
-            </li>
-            <li class="{{ Request::is('credits') ? 'active' : '' }}">
+            </li> --}}
+            <li class=''>
                 <a class="nav-link"
                     href="{{ url('credits') }}"><i class="fas fa-heart">
                     </i> <span>Farmasi</span>

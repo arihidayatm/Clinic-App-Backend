@@ -15,11 +15,18 @@
                 <div class="section-header-button">
                     <a href="{{ route('users.create') }}" class="btn btn-primary">Add New</a>
                 </div>
-                <div class="section-header-breadcrumb">
-                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                    <div class="breadcrumb-item"><a href="#">Users</a></div>
-                    <div class="breadcrumb-item">All Users</div>
-                </div>
+                <div class="section-header-breadcrumb d-flex justify-content-end">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active"><a href="#"><i class="fas fa-tachometer-alt"></i>
+                                    Home</a></li>
+                            <li class="breadcrumb-item"><a href="#"><i class="fas fa-user"></i>
+                                    Users</a></li>
+                            <li class="breadcrumb-item"
+                                aria-current="page"><i class="fas fa-users"></i> All Users</li>
+                        </ol>
+                    </nav>
+               </div>
             </div>
             <div class="section-body">
                 <div class="row">
