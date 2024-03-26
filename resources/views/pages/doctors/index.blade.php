@@ -63,35 +63,35 @@
 
                                 <div class="table-responsive">
                                     <table class="table-striped table">
-                                        <tr>
+                                        <tr class="text-center">
 
                                             <th>Name</th>
-                                            <th>Birthday</th>
+                                            {{-- <th>Birthday</th> --}}
                                             <th>Email</th>
                                             <th>Phone</th>
-                                            <th>Address</th>
+                                            {{-- <th>Address</th> --}}
                                             <th>SIP</th>
                                             <th>Spesialist</th>
                                             <th>Photo</th>
-                                            <th>Created At</th>
+                                            {{-- <th>Created At</th> --}}
                                             <th>Action</th>
                                         </tr>
                                         @foreach ($doctors as $doctor)
                                             <tr>
                                                 <td>{{ $doctor->doctor_name }}
                                                 </td>
-                                                <td>
+                                                {{-- <td>
                                                     {{ $doctor->doctor_birthday }}
-                                                </td>
+                                                </td> --}}
                                                 <td>
                                                     {{ $doctor->doctor_email }}
                                                 </td>
                                                 <td>
                                                     {{ $doctor->doctor_phone }}
                                                 </td>
-                                                <td>
+                                                {{-- <td>
                                                     {{ $doctor->doctor_address }}
-                                                </td>
+                                                </td> --}}
                                                 <td>
                                                     {{ $doctor->doctor_sip }}
                                                 </td>
@@ -99,9 +99,9 @@
                                                     {{ $doctor->doctor_specialist }}
                                                 </td>
                                                 <td>
-                                                    {{ $doctor->doctor_photo }}
+                                                    <img src="{{ asset('storage/' . $doctor->doctor_photo) }}" class="card-img-top img-cover" />
                                                 </td>
-                                                <td>{{ $doctor->created_at }}</td>
+                                                {{-- <td>{{ $doctor->created_at }}</td> --}}
                                                 <td>
                                                     <div class="d-flex justify-content-center">
                                                         <a href='{{ route('doctors.edit', $doctor->id) }}'

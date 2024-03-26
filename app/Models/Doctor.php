@@ -9,24 +9,6 @@ class Doctor extends Model
 {
     use HasFactory;
 
-    // $table->id();
-    // //doctor name
-    // $table->string('doctor_name');
-    // //birthday
-    // $table->date('doctor_birthday');
-    // //doctor email
-    // $table->string('doctor_email')->unique();
-    // //doctor phone
-    // $table->string('doctor_phone');
-    // //address
-    // $table->string('doctor_address');
-    // //sip
-    // $table->string('doctor_sip');
-    // //doctor speciality
-    // $table->string('doctor_specialist');
-    // //photo
-    // $table->string('doctor_photo');
-
     protected $filable = [
         'doctor_name',
         'doctor_birthday',

@@ -25,33 +25,33 @@
                             <li class="breadcrumb-item"><a href="#"><i class="fas fa-id-badge"></i>
                                     Form</a></li>
                             <li class="breadcrumb-item"
-                                aria-current="page"><i class="fas fa-users"></i> Users</li>
+                                aria-current="page"><i class="fas fa-users"></i> Doctor</li>
                         </ol>
                     </nav>
                </div>
             </div>
 
             <div class="section-body">
-                <h2 class="section-title">Users</h2>
+                <h2 class="section-title">Doctor</h2>
 
 
 
                 <div class="card">
-                    <form action="{{ route('doctors.update', $user) }}" method="POST">
+                    <form action="{{ route('doctors.update', $doctor) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div class="card-header">
-                            <h4>Input Text</h4>
+                            <h4>Update Doctor Data</h4>
                         </div>
                         <div class="card-body">
                             <div class="form-group">
                                 <label>Name</label>
                                 <input type="text"
-                                    class="form-control @error('name')
+                                    class="form-control @error('doctor_name')
                                 is-invalid
                             @enderror"
-                                    name="name" value="{{ $user->name }}">
-                                @error('name')
+                                    name="doctor_name" value="{{ $doctor->doctor_name }}">
+                                @error('doctor_name')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
@@ -60,31 +60,11 @@
                             <div class="form-group">
                                 <label>Email</label>
                                 <input type="email"
-                                    class="form-control @error('email')
+                                    class="form-control @error('doctor_email')
                                 is-invalid
                             @enderror"
-                                    name="email" value="{{ $user->email }}">
-                                @error('email')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                @enderror
-                            </div>
-                            <div class="form-group">
-                                <label>Password</label>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">
-                                            <i class="fas fa-lock"></i>
-                                        </div>
-                                    </div>
-                                    <input type="password"
-                                        class="form-control @error('password')
-                                is-invalid
-                            @enderror"
-                                        name="password">
-                                </div>
-                                @error('password')
+                                    name="doctor_email" value="{{ $doctor->doctor_email }}">
+                                @error('doctor_email')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
@@ -92,28 +72,23 @@
                             </div>
                             <div class="form-group">
                                 <label>Phone</label>
-                                <input type="number" class="form-control" name="phone" value="{{ $user->phone }}">
+                                <input type="number" class="form-control" name="doctor_phone" value="{{ $doctor->doctor_phone }}">
                             </div>
                             <div class="form-group">
-                                <label class="form-label">Roles</label>
-                                <div class="selectgroup w-100">
-                                    <label class="selectgroup-item">
-                                        <input type="radio" name="role" value="admin" class="selectgroup-input"
-                                            @if ($user->role == 'admin') checked @endif>
-                                        <span class="selectgroup-button">Admin</span>
-                                    </label>
-                                    <label class="selectgroup-item">
-                                        <input type="radio" name="role" value="doctor" class="selectgroup-input"
-                                            @if ($user->role == 'doctor') checked @endif>
-                                        <span class="selectgroup-button">Doctor</span>
-                                    </label>
-                                    <label class="selectgroup-item">
-                                        <input type="radio" name="role" value="user" class="selectgroup-input"
-                                            @if ($user->role == 'user') checked @endif>
-                                        <span class="selectgroup-button">User</span>
-                                    </label>
-
-                                </div>
+                                <label>SIP</label>
+                                <input type="text" class="form-control" name="doctor_sip" value="{{ $doctor->doctor_sip }}">
+                            </div>
+                            <div class="form-group">
+                                <label>Spesialist</label>
+                                <input type="text" class="form-control" name="doctor_specialist" value="{{ $doctor->doctor_specialist }}">
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label>
+                                <textarea class="form-control" name="doctor_address">{{ $doctor->doctor_address }}</textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Upload File/Image</label>
+                                <input type="file" class="form-control" name="doctor_photo">
                             </div>
                         </div>
                         <div class="card-footer text-right">
