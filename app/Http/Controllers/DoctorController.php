@@ -64,14 +64,14 @@ class DoctorController extends Controller
 
     //show
     public function show($id){
-        $doctor = DB::table('doctors')->where('id',$id)->first();
-        return view('pages.doctors.show',compact('doctor'));
+        $doctor = DB::table('doctors')->where('id', $id)->first();
+        return view('pages.doctors.show', compact('doctors'));
     }
 
     //edit
     public function edit($id){
-        $doctor = DB::table('doctors')->where('id',$id)->first();
-        return view('pages.doctors.edit',compact('doctor'));
+        $doctor = DB::table('doctors')->where('id', $id)->first();
+        return view('pages.doctors.edit', compact('doctor'));
     }
 
     //update
