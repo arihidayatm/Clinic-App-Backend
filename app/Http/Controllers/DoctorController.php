@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Doctor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Doctor;
 
 class DoctorController extends Controller
 {
@@ -21,12 +21,14 @@ class DoctorController extends Controller
     }
 
     //create
-    public function create(){
+    public function create()
+    {
         return view('pages.doctors.create');
     }
 
     //store
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $request->validate([
             'doctor_name' => 'required',
             'nik' => 'required',
@@ -63,13 +65,15 @@ class DoctorController extends Controller
     }
 
     //show
-    public function show($id){
+    public function show($id)
+    {
         $doctor = DB::table('doctors')->where('id', $id)->first();
-        return view('pages.doctors.show', compact('doctors'));
+        return view('pages.doctors.show', compact('doctor'));
     }
 
     //edit
-    public function edit($id){
+    public function edit($id)
+    {
         $doctor = DB::table('doctors')->where('id', $id)->first();
         return view('pages.doctors.edit', compact('doctor'));
     }
