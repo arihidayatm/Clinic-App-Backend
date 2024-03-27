@@ -18,11 +18,13 @@ class DoctorFactory extends Factory
     {
         return [
             'doctor_name' => fake()->name(),
+            'nik' => fake()->numberBetween(1000000000000000, 9999999999999999),
             'doctor_birthday' => fake()->date(),
             'doctor_email' => fake()->safeEmail(),
             'doctor_phone' => fake()->phoneNumber(),
             'doctor_address' => fake()->address(),
             'doctor_sip' => fake()->numberBetween(1000, 9999),
+            'id_ihs' => fake()->numberBetween(1000, 9999),
             'doctor_specialist' => fake()->word(),
             'doctor_photo' => fake()->imageUrl(640, 480),
         ];

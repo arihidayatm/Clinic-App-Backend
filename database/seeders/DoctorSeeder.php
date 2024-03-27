@@ -14,5 +14,6 @@ class DoctorSeeder extends Seeder
     {
         //15 factory
         \App\Models\Doctor::factory()->count(15)->create();
+        
     }
 }

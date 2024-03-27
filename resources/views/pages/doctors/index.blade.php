@@ -99,7 +99,11 @@
                                                     {{ $doctor->doctor_specialist }}
                                                 </td>
                                                 <td>
-                                                    <img src="{{ asset('storage/' . $doctor->doctor_photo) }}" class="card-img-top img-cover" />
+                                                    @if ($doctor->doctor_photo)
+                                                        <img src="{{ asset('storage/doctors/' . $doctor->doctor_photo) }}" class="card-img-top img-cover" width="100px" alt=""/>
+                                                        @else
+                                                        <img src="{{ asset('img/default.png') }}" class="card-img-top img-cover" width="100px" alt=""/>
+                                                    @endif
                                                 </td>
                                                 {{-- <td>{{ $doctor->created_at }}</td> --}}
                                                 <td>
@@ -110,10 +114,13 @@
                                                             Edit
                                                         </a>
 
-                                                        <form action="{{ route('doctors.destroy', $doctor->id) }}" method="POST"
+                                                        <form action="{{ route('doctors.destroy', [$doctor->id]) }}" method="POST"
+{{-- -                                                        <form action="{{ route('doctors.destroy', $doctor->id) }}" method="POST" --}}
                                                             class="ml-2">
-                                                            <input type="hidden" name="_method" value="DELETE" />
-                                                            <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                                                            @method('DELETE')
+                                                            @csrf
+{{-- -                                                       <input type="hidden" name="_method" value="DELETE" />
+-                                                            <input type="hidden" name="_token" value="{{ csrf_token() }}" /> --}}
                                                             <button class="btn btn-sm btn-danger btn-icon confirm-delete">
                                                                 <i class="fas fa-times"></i> Delete
                                                             </button>
