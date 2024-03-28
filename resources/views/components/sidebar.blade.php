@@ -30,7 +30,7 @@
             <li class=''>
                 <a class="nav-link"
                     href="{{ route('doctor-schedules.index') }}"><i class="fas fa-paper-plane">
-                    </i> <span>Doctor Schedule</span>
+                    </i> <span>Doctor Schedules</span>
                 </a>
             </li>
             {{-- <li class="{{ Request::is('credits') ? 'active' : '' }}">
