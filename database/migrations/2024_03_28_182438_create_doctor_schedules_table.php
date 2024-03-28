@@ -18,7 +18,8 @@ return new class extends Migration
             //day
             $table->string('day');
             //time
-            $table->string('time');
+            $table->string('start_time')->nullable('start_time');
+            $table->string('end_time')->nullable('end_time');
             //status
             $table->string('status')->default('active');
             //note

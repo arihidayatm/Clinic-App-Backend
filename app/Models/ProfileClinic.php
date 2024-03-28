@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class ProfileClinic extends Model
 {
     use HasFactory;
+    
 }

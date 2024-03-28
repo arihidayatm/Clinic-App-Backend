@@ -18,7 +18,7 @@ class ProfileClinicFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'description' => fake()->text(500),
+            // 'description' => fake()->text(500),
             'address' => fake()->address(),
             'phone' => fake()->phoneNumber(),
             'email' => fake()->safeEmail(),
@@ -27,5 +27,5 @@ class ProfileClinicFactory extends Factory
             'clinic_code' => fake()->text(10),
         ];
     }
-    
+
 }
