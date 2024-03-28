@@ -102,7 +102,7 @@
                                                     @if ($doctor->doctor_photo)
                                                         <img src="{{ asset('storage/doctors/' . $doctor->doctor_photo) }}" class="card-img-top img-cover" width="100px" alt=""/>
                                                         @else
-                                                        <img src="{{ asset('img/default.png') }}" class="card-img-top img-cover" width="100px" alt=""/>
+                                                        <img src="{{ asset('images/doctors/doctormale.png') }}" class="card-img-top img-cover" width="100px" alt=""/>
                                                     @endif
                                                 </td>
                                                 {{-- <td>{{ $doctor->created_at }}</td> --}}

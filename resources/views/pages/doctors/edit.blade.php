@@ -57,6 +57,35 @@
                                     </div>
                                 @enderror
                             </div>
+
+                            <div class="form-group">
+                                <label>NIK</label>
+                                <input type="number"
+                                    class="form-control @error('nik')
+                                is-invalid
+                            @enderror"
+                                    name="nik" value="{{ $doctor->nik }}">
+                                @error('nik')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
+                            <div class="form-group">
+                                <label>Birtdate</label>
+                                <input type="text"
+                                    class="form-control @error('doctor_birthdate')
+                                is-invalid
+                            @enderror"
+                                    name="doctor_birthdate" value="{{ $doctor->doctor_birthdate }}">
+                                @error('doctor_birthdate')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
                             <div class="form-group">
                                 <label>Email</label>
                                 <input type="email"
@@ -77,6 +106,10 @@
                             <div class="form-group">
                                 <label>SIP</label>
                                 <input type="text" class="form-control" name="doctor_sip" value="{{ $doctor->doctor_sip }}">
+                            </div>
+                            <div class="form-group">
+                                <label>IHS</label>
+                                <input type="text" class="form-control" name="id_ihs" value="{{ $doctor->id_ihs }}">
                             </div>
                             <div class="form-group">
                                 <label>Spesialist</label>

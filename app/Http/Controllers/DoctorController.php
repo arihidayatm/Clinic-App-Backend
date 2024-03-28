@@ -57,7 +57,7 @@ class DoctorController extends Controller
         //save photo
         if($request->hasFile('doctor_photo')){
             $image = $request->file('doctor_photo');
-            $image->storeAs('public/images/doctors/', $doctor->id . '-' . $image->getClientOriginalExtension());
+            $image->storeAs('public/doctors/', $doctor->id . '-' . $image->getClientOriginalExtension());
             $doctor->doctor_photo = 'storage/doctors/' . $doctor->id . '-' . $image->getClientOriginalExtension();
             $doctor->save();
         }
