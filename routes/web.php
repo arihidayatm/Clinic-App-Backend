@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\DoctorScheduleController;
 
 Route::get('/', function () {
     return view('pages.auth.login');
@@ -21,4 +22,6 @@ Route::middleware(['auth'])->group(function(){
 
     //doctor
     Route::resource('doctors', DoctorController::class);
+    //doctor-schedule
+    Route::resource('doctor-schedules', DoctorScheduleController::class);
 });
