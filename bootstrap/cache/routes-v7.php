@@ -41,7 +41,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Gh1v2RcyFSFOEHaO',
+            '_route' => 'generated::qnS6hhs7Goqgob4G',
           ),
           1 => NULL,
           2 => 
@@ -151,7 +151,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::UtcgebgTuWtpNy9p',
+            '_route' => 'generated::VLQRXZIGOYg6i9tH',
           ),
           1 => NULL,
           2 => 
@@ -208,7 +208,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::xw3W7a5DYDVDUNV7',
+            '_route' => 'generated::GbJ5FGrH5WGujKEe',
           ),
           1 => NULL,
           2 => 
@@ -281,7 +281,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::XQRSkYCpc5bp6u4W',
+            '_route' => 'generated::erR53PmX2lZZXV05',
           ),
           1 => NULL,
           2 => 
@@ -411,7 +411,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::uh26MBcsSeEV7mK8',
+            '_route' => 'generated::SLPLf780denrYmjk',
           ),
           1 => NULL,
           2 => 
@@ -508,7 +508,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Rp4joYg4ey3Kpz1k',
+            '_route' => 'generated::DWvJMp77I6qhvRNR',
           ),
           1 => NULL,
           2 => 
@@ -528,7 +528,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::2nAJHfNeFBbKjMmB',
+            '_route' => 'generated::FSkfw3LrvQYEF3iH',
           ),
           1 => NULL,
           2 => 
@@ -674,10 +674,66 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/doctor-schedules' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctor-schedules.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctor-schedules.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/doctor-schedules/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctor-schedules.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/reset\\-password/([^/]++)(*:32)|/users/([^/]++)(?|(*:57)|/edit(*:69)|(*:76))|/doctors/([^/]++)(?|(*:104)|/edit(*:117)|(*:125)))/?$}sDu',
+      0 => '{^(?|/reset\\-password/([^/]++)(*:32)|/users/([^/]++)(?|(*:57)|/edit(*:69)|(*:76))|/doctor(?|s/([^/]++)(?|(*:107)|/edit(*:120)|(*:128))|\\-schedules/([^/]++)(?|(*:160)|/edit(*:173)|(*:181))))/?$}sDu',
     ),
     3 => 
     array (
@@ -792,7 +848,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      104 => 
+      107 => 
       array (
         0 => 
         array (
@@ -815,7 +871,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      117 => 
+      120 => 
       array (
         0 => 
         array (
@@ -838,7 +894,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      125 => 
+      128 => 
       array (
         0 => 
         array (
@@ -869,6 +925,94 @@ app('router')->setCompiledRoutes(
           1 => 
           array (
             0 => 'doctor',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      160 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctor-schedules.show',
+          ),
+          1 => 
+          array (
+            0 => 'doctor_schedule',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      173 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctor-schedules.edit',
+          ),
+          1 => 
+          array (
+            0 => 'doctor_schedule',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      181 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctor-schedules.update',
+          ),
+          1 => 
+          array (
+            0 => 'doctor_schedule',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'doctor-schedules.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'doctor_schedule',
           ),
           2 => 
           array (
@@ -934,7 +1078,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Gh1v2RcyFSFOEHaO' => 
+    'generated::qnS6hhs7Goqgob4G' => 
     array (
       'methods' => 
       array (
@@ -957,7 +1101,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Gh1v2RcyFSFOEHaO',
+        'as' => 'generated::qnS6hhs7Goqgob4G',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1203,7 +1347,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::UtcgebgTuWtpNy9p' => 
+    'generated::VLQRXZIGOYg6i9tH' => 
     array (
       'methods' => 
       array (
@@ -1225,7 +1369,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::UtcgebgTuWtpNy9p',
+        'as' => 'generated::VLQRXZIGOYg6i9tH',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1317,7 +1461,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::xw3W7a5DYDVDUNV7' => 
+    'generated::GbJ5FGrH5WGujKEe' => 
     array (
       'methods' => 
       array (
@@ -1340,7 +1484,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::xw3W7a5DYDVDUNV7',
+        'as' => 'generated::GbJ5FGrH5WGujKEe',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1472,7 +1616,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::XQRSkYCpc5bp6u4W' => 
+    'generated::erR53PmX2lZZXV05' => 
     array (
       'methods' => 
       array (
@@ -1495,7 +1639,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::XQRSkYCpc5bp6u4W',
+        'as' => 'generated::erR53PmX2lZZXV05',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1748,7 +1892,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::uh26MBcsSeEV7mK8' => 
+    'generated::SLPLf780denrYmjk' => 
     array (
       'methods' => 
       array (
@@ -1771,7 +1915,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::uh26MBcsSeEV7mK8',
+        'as' => 'generated::SLPLf780denrYmjk',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1933,7 +2077,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Rp4joYg4ey3Kpz1k' => 
+    'generated::DWvJMp77I6qhvRNR' => 
     array (
       'methods' => 
       array (
@@ -1956,7 +2100,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Rp4joYg4ey3Kpz1k',
+        'as' => 'generated::DWvJMp77I6qhvRNR',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1972,7 +2116,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::2nAJHfNeFBbKjMmB' => 
+    'generated::FSkfw3LrvQYEF3iH' => 
     array (
       'methods' => 
       array (
@@ -1994,7 +2138,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::2nAJHfNeFBbKjMmB',
+        'as' => 'generated::FSkfw3LrvQYEF3iH',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2557,6 +2701,270 @@ app('router')->setCompiledRoutes(
         'as' => 'doctors.destroy',
         'uses' => 'App\\Http\\Controllers\\DoctorController@destroy',
         'controller' => 'App\\Http\\Controllers\\DoctorController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctor-schedules.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'doctor-schedules',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctor-schedules.index',
+        'uses' => 'App\\Http\\Controllers\\DoctorScheduleController@index',
+        'controller' => 'App\\Http\\Controllers\\DoctorScheduleController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctor-schedules.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'doctor-schedules/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctor-schedules.create',
+        'uses' => 'App\\Http\\Controllers\\DoctorScheduleController@create',
+        'controller' => 'App\\Http\\Controllers\\DoctorScheduleController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctor-schedules.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'doctor-schedules',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctor-schedules.store',
+        'uses' => 'App\\Http\\Controllers\\DoctorScheduleController@store',
+        'controller' => 'App\\Http\\Controllers\\DoctorScheduleController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctor-schedules.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'doctor-schedules/{doctor_schedule}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctor-schedules.show',
+        'uses' => 'App\\Http\\Controllers\\DoctorScheduleController@show',
+        'controller' => 'App\\Http\\Controllers\\DoctorScheduleController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctor-schedules.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'doctor-schedules/{doctor_schedule}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctor-schedules.edit',
+        'uses' => 'App\\Http\\Controllers\\DoctorScheduleController@edit',
+        'controller' => 'App\\Http\\Controllers\\DoctorScheduleController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctor-schedules.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'doctor-schedules/{doctor_schedule}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctor-schedules.update',
+        'uses' => 'App\\Http\\Controllers\\DoctorScheduleController@update',
+        'controller' => 'App\\Http\\Controllers\\DoctorScheduleController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'doctor-schedules.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'doctor-schedules/{doctor_schedule}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'doctor-schedules.destroy',
+        'uses' => 'App\\Http\\Controllers\\DoctorScheduleController@destroy',
+        'controller' => 'App\\Http\\Controllers\\DoctorScheduleController@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 

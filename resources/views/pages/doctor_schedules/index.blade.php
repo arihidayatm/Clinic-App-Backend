@@ -45,7 +45,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4>All Posts</h4>
+                                <h4>Doctor Schedules</h4>
                             </div>
                             <div class="card-body">
                                 <div class="float-right">
@@ -95,13 +95,13 @@
 
                                                 <td>
                                                     <div class="d-flex justify-content-center">
-                                                        <a href='{{ route('doctor-schedules.edit', $doctor->id) }}'
+                                                        <a href='{{ route('doctor-schedules.edit', $schedule->id) }}'
                                                             class="btn btn-sm btn-info btn-icon">
                                                             <i class="fas fa-edit"></i>
                                                             Edit
                                                         </a>
 
-                                                        <form action="{{ route('doctor-schedules.destroy', [$doctor->id]) }}" method="POST"
+                                                        <form action="{{ route('doctor-schedules.destroy', [$schedule->id]) }}" method="POST"
 {{-- -                                                        <form action="{{ route('doctors.destroy', $doctor->id) }}" method="POST" --}}
                                                             class="ml-2">
                                                             @method('DELETE')

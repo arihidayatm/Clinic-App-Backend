@@ -17,7 +17,7 @@ class DoctorScheduleController extends Controller
             return $query->where('doctor_id', $doctor_id);
         })
         ->orderBy('id', 'desc')
-        ->load('doctor')
+        // ->load('doctor')
         ->paginate(10);
 
         return view('pages.doctor_schedules.index', compact('doctorSchedules'));

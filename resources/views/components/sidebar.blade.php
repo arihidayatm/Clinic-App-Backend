@@ -27,6 +27,12 @@
                     </i> <span>Doctors</span>
                 </a>
             </li>
+            <li class=''>
+                <a class="nav-link"
+                    href="{{ route('doctor-schedules.index') }}"><i class="fas fa-paper-plane">
+                    </i> <span>Doctor Schedule</span>
+                </a>
+            </li>
             {{-- <li class="{{ Request::is('credits') ? 'active' : '' }}">
                 <a class="nav-link"
                     href="{{ url('credits') }}"><i class="fas fa-pencil-ruler">
